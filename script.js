@@ -42,27 +42,27 @@ const ingredientsData = {
     cartItemElement.classList.add('cart-item');
     cartItemElement.textContent = productName;
     cartItemsContainer.appendChild(cartItemElement);
-    alert('Товар добавлен в корзину!');
+    alert('ТОВАР ДОБАВЛЕН В КОРЗИНУ!');
   }
 
   function openPayment() {
-    const phoneNumber = prompt('Введите ваш номер телефона:');
-    const userName = prompt('Введите ваше имя:');
+    const phoneNumber = prompt('ВВЕДИТЕ ВАШ НОМЕР ТЕЛЕФОНА:');
+    const userName = prompt('ВВЕДИТЕ ВАШЕ ИМЯ:');
     
     if (phoneNumber && userName) {
-        alert(`${userName}, на ваш номер ${phoneNumber} отправлен счёт для оплаты.`);
+        alert(`${userName}, НА ВАШ НОМЕР ${phoneNumber} ОТПРАВЛЕН СЧЕТ НА ОПЛАТУ.`);
     } else {
         alert('Введите корректные данные.');
     }
   }
 
   function openHelp() {
-    const userPhoneNumber = prompt('Оставьте свой номер телефона:');
+    const userPhoneNumber = prompt('ОСТАВЬТЕ СВОЙ НОМЕР ТЕЛЕФОНА:');
     
     if (userPhoneNumber) {
-      alert(`Спасибо! В течение 5 минут с вами свяжется наш администратор по номеру: ${userPhoneNumber}`);
+      alert(`СПАСИБО! В ТЕЧЕНИЕ 5 МИНУТ С ВАМИ СВЯЖЕТСЯ НАШ АДМИНИСТРАТОР ПО НОМЕРУ: ${userPhoneNumber}`);
     } else {
-      alert('Пожалуйста, оставьте свой номер телефона.');
+      alert('ПОЖАЛУЙСТА,ОСТАВЬТЕ СВОЙ НОМЕР ТЕЛЕФОНА');
     }
   }
 
